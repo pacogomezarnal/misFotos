@@ -1,0 +1,5 @@
+<ul class="text-left">
+  <li *ngFor="let foto of fotos" (click)="selecc(foto)">
+    <span>{{foto.id}}</span> {{foto.nombre}}
+  </li>
+</ul>
