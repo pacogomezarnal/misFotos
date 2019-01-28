@@ -10,6 +10,7 @@ import {FOTOS} from '../fotos/fotos'
 export class ListaFotosComponent implements OnInit {
 
   fotos = FOTOS;
+  textoFiltrado = "palabra";
   @Output() fotoSeleccionada = new EventEmitter<Foto>();
   constructor() { }
 
@@ -19,5 +20,6 @@ export class ListaFotosComponent implements OnInit {
   selecc(seleccionada:Foto){
     this.fotoSeleccionada.emit(seleccionada);
   }
+
 
 }
