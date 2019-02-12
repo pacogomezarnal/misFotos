@@ -2,3 +2,4 @@
 <p>{{foto.id}}</p>
 <p>{{foto.nombre}}</p>
 <img src="assets/fotos/{{foto.file}}" width="200px" alt="" *ngIf="foto.file.length">
+<p>Fecha creacio:{{foto.fecha | date:"dd MMMM yy" |lowercase}} </p>
